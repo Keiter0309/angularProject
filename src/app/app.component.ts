@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CartService } from './cart.service';
+import { AuthService } from './auth/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project';
+  constructor(
+
+  
+    private cartService:CartService,
+    private authService: AuthService
+  
+  ){}
+  ItemCount(){
+    return this.cartService.totalItems()
+  }
+ isAuthenticated() {
+  return this.authService.isAuthenticated}
 }

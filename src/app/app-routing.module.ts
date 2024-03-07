@@ -6,6 +6,8 @@ import { ContactComponent } from './contact/contact.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { LoginComponent } from './auth/login/login.component';
+
 
 const routes: Routes = [
   {path:"",component:HomeComponent,title:"Trang Chủ"},
@@ -13,7 +15,9 @@ const routes: Routes = [
   {path:"concact",component:ContactComponent,title:"Liên Hệ"},
   {path:"cart",component:CartComponent,title:"Giỏ Hàng"},
   {path:"checkout",component:CheckoutComponent,title:"Thanh Toán"},
-  {path:"product-details",component:ProductDetailComponent,title:"Chi tiết sản phẩm"},
+  {path:"product-details/:id",component:ProductDetailComponent,title:"Chi tiết sản phẩm"},
+  {path:"login",component:LoginComponent,title:"Đăng Nhập"},
+ 
 ];
 
 @NgModule({

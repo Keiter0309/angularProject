@@ -42,7 +42,18 @@
               <li><a routerLink="/concact">Liên Hệ</a></li>
               <li>
                 <div class="header-icons">
-                  <a class="shopping-cart" routerLink="/cart"><i class="fas fa-shopping-cart"></i></a>
+                  <ng-container *ngIf="!isAuthenticated()">
+                    <li class="nav-item active">
+                        <a class="nav-link" routerLink="/login" href="#">Login</a>
+                    </li>
+                </ng-container>
+                
+                <ng-container *ngIf="isAuthenticated()">
+                    <li class="nav-item active">
+                        <a class="nav-link" routerLink="/logout" href="#">Logout</a>
+                    </li>
+                </ng-container>
+                  <a class="shopping-cart" routerLink="/cart"><i class="fas fa-shopping-cart"></i> {{ItemCount()}} </a>
                   <a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
                 </div>
               </li>
