@@ -25,14 +25,13 @@
                 <div class="col-md-12">
                     <div class="product-filters">
                         <ul>
-                            <li class="active">All</li>
-                            <li >Cam</li>
-                            <li >Chanh Dây</li>
-                            <li >Cam Tươi</li>
-                            <li >NHO XANH KHÔNG HẠT</li>
-                            <li >Táo xanh TXM</li>
-                            <li >Lemon</li>
-                            <li >Lemon</li>
+                            <li (click)="getProductsByCategory('All')" class="active">All</li>
+							<li (click)="getProductsByCategory('Cam Tươi')">Cam</li>
+							<li (click)="getProductsByCategory('Chanh Dây')">Chanh Dây</li>
+							<li (click)="getProductsByCategory('NHO XANH KHÔNG HẠT')">NHO XANH KHÔNG HẠT</li>
+							<li (click)="getProductsByCategory('Táo xanh TXM')">Táo xanh </li>
+							<li (click)="getProductsByCategory('Lựu Peru')">Lựu Peru</li>
+							<!-- <li (click)="getProductsByCategory('NHO XANH KHÔNG HẠT')">NHO XANH KHÔNG HẠT</li> -->
                         </ul>
                     </div>
                 </div>
@@ -48,7 +47,9 @@
 						</div>
 						<h3 class="mt-3">{{item.productName}}</h3>
 						<p class="product-price"><span>Per Kg</span> {{item.price}} </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+						<a  class="cart-btn " (click)="Add(item.id)">
+							<i class="fas fa-shopping-cart"></i> Add to Cart
+						  </a>
 					</div>
 				</div>
 				
@@ -104,7 +105,7 @@
 				</div> -->
 			</div>
 
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col-lg-12 text-center">
 					<div class="pagination-wrap">
 						<ul>
@@ -116,7 +117,7 @@
 						</ul>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 	<!-- end products -->

@@ -9,8 +9,10 @@ import { ContactComponent } from './contact/contact.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
-import {  FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {  FormsModule, ReactiveFormsModule, FormGroup } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './auth/login/login.component';
+import { ResComponent } from './auth/res/res.component';
 
 
 
@@ -23,8 +25,9 @@ import { HttpClientModule } from '@angular/common/http';
     ContactComponent,
     CartComponent,
     CheckoutComponent,
+    LoginComponent,
     ProductDetailComponent,
- 
+    ResComponent,
 
   ],
   imports: [
@@ -33,7 +36,6 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-
 
   ],
   providers: [],

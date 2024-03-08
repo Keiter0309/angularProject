@@ -1,94 +1,112 @@
 {
-    "products":[
-        {
-            "id":"1",
-            "productName":"Chanh Dây",
-            "description":"Rẻ ngon bổ ",
-            "price":25000,
-            "imageUrl":"../assets/images/chanhday.png",
-            "Date":"2022-09-20",
-            "starRating":4.5,
-            "InStock":5
-          },
-          {
-            "id":"2",
-            "productName":"Cam Tươi",
-            "description":"Cam úc nhập khẩu là loại cam được yêu thích nhất trong các loại cam. Trái cam ngọt mát, chứa nhiều chất chống Oxy hoá,  phytochemical. Có lợi với sức khoẻ con người. Cam chứa nhiều nước, giúp bù nước, khoáng chất cho người có cường độ vận động cao. Cam có thể giải nhiệt, tăng cường chức năng cho hệ tiêu hoá, hệ miễn dịch của cơ thể.",
-            "price":30000,
-            "imageUrl":"../assets/images/Cam.png",
-            "Date":"2022-09-20",
-            "starRating":4.5,
-            "InStock":5
-          },
-          {
-            "id":"3",
-            "productName":"NHO XANH KHÔNG HẠT",
-            "description":"Nho xanh không hạt Mỹ được trồng tại nơi có khí hậu ôn đới nơi không khí khô và nhiều nắng. Bởi như thế mới không bị sâu bệnh tấn công và tạo điều kiện phát triển ra quả nho ngon nhất",
-            "price":25000,
-            "imageUrl":"../assets/images/nho.png",
-            "Date":"2022-09-20",
-            "starRating":4.4,
-            "InStock":5
-          },
-          {
-            "id":"4",
-            "productName":"Táo xanh TXM",
-            "description":"Táo xanh có độ giòn cao, mùi thơm đặc trưng như mùi của me. Có vị chua nhẹ, ăn với muối ớt, muối Tây Ninh cực kỳ ngon.",
-            "price":160000,
-            "imageUrl":"../assets/images/tao.png",
-            "Date":"2022-09-20",
-            "starRating":4.4,
-            "InStock":5
-          },
-          {
-            "id":"5",
-            "productName":"Lựu Peru",
-            "description":"Lựu Peru nổi tiếng được trồng rất nhiều tại đây và xuất khẩu đi các thị trường lớn trên Thế Giới",
-            "price":350000,
-            "imageUrl":"../assets/images/luu.png",
-            "Date":"2022-09-20",
-            "starRating":4.4,
-            "InStock":5
-          },
-          {
-            "id":"6",
-            "productName":"CHUỐI LABA",
-            "description":"Chuối Laba (chuối Tiến Vua), một giống chuối đặc sản nổi tiếng của vùng đất Lâm Đồng đang có nguy cơ mai một, giống chuối quý này đã từng rất nổi tiếng,được ưa chuộng nhờ hương vị thơm ngon, dẻo ngọt. Trong lịch sử, chuối Laba đã được dùng để tiến Vua Bảo Đại, triều đình và các quan chức người Pháp. Vì vậy, chuối Laba còn được gọi là chuối Tiến Vua.",
-            "price":25000,
-            "imageUrl":"../assets/images/chuoi.png",
-            "Date":"2022-09-20",
-            "starRating":4.4,
-            "InStock":5
-          },
-          {
-            "id":"7",
-            "productName":"Xoài",
-            "description":"Xoài là nguồn cung cấp vitamin A, chất chống oxi hóa tự nhiên, có tác dụng tăng cường thị lực, quáng gà, khô mắt, mềm hóa giác mạc, tật khúc xạ, ngứa, rát mắt đều có thể được ngăn chặn bằng cách ăn xoài thường xuyên",
-            "price":50000,
-            "imageUrl":"../assets/images/xoai.png",
-            "Date":"2022-09-20",
-            "starRating":4.4,
-            "InStock":5
-          },
-          {
-            "id":"8",
-            "productName":"SẦU RIÊNG RI6",
-            "description":"Sầu riêng RI6 có hương vị thơm ngon, và có chứa một hàm lượng vitamin C, B, chất xơ, sắt, đồng, kali… tốt cho sức đề kháng, cải thiện lưu lượng máu và giúp bạn vượt qua trầm cảm hiệu quả.",
-            "price":25000,
-            "imageUrl":"../assets/images/saurieng.png",
-            "Date":"2022-09-20",
-            "starRating":4.4,
-            "InStock":5
-          },
-          {
-            "id":"9",
-            "productName":"Trái vải",
-            "description":"Quả vải thiều là một trong những loại trái cây được ưa chuộng tiêu thụ nhiều vào dịp hè. Loại quả nhiệt đới này không chỉ giàu giá trị dinh dưỡng mà còn đem lại rất nhiều lợi ích ấn tượng đối với sức khoẻ, chẳng hạn như chữa lành các tổn thương, ngăn ngừa ung thư, tốt cho da và hệ tiêu hoá.",
-            "price":70000,
-            "imageUrl":"../assets/images/vai.png",
-            "Date":"2022-09-20",
-            "starRating":4.4,
-            "InStock":5
-          }
-    ]
+  "products": [
+    {
+      "id": "1",
+      "productName": "Chanh Dây",
+      "description": "Rẻ ngon bổ ",
+      "price": 25000,
+      "imageUrl": "../assets/images/chanhday.png",
+      "Date": "2022-09-20",
+      "starRating": 4.5,
+      "InStock": 5
+    },
+    {
+      "id": "2",
+      "productName": "Cam Tươi",
+      "description": "Cam úc nhập khẩu là loại cam được yêu thích nhất trong các loại cam. Trái cam ngọt mát, chứa nhiều chất chống Oxy hoá,  phytochemical. Có lợi với sức khoẻ con người. Cam chứa nhiều nước, giúp bù nước, khoáng chất cho người có cường độ vận động cao. Cam có thể giải nhiệt, tăng cường chức năng cho hệ tiêu hoá, hệ miễn dịch của cơ thể.",
+      "price": 30000,
+      "imageUrl": "../assets/images/Cam.png",
+      "Date": "2022-09-20",
+      "starRating": 4.5,
+      "InStock": 5
+    },
+    {
+      "id": "3",
+      "productName": "NHO XANH KHÔNG HẠT",
+      "description": "Nho xanh không hạt Mỹ được trồng tại nơi có khí hậu ôn đới nơi không khí khô và nhiều nắng. Bởi như thế mới không bị sâu bệnh tấn công và tạo điều kiện phát triển ra quả nho ngon nhất",
+      "price": 25000,
+      "imageUrl": "../assets/images/nho.png",
+      "Date": "2022-09-20",
+      "starRating": 4.4,
+      "InStock": 5
+    },
+    {
+      "id": "4",
+      "productName": "Táo xanh TXM",
+      "description": "Táo xanh có độ giòn cao, mùi thơm đặc trưng như mùi của me. Có vị chua nhẹ, ăn với muối ớt, muối Tây Ninh cực kỳ ngon.",
+      "price": 160000,
+      "imageUrl": "../assets/images/tao.png",
+      "Date": "2022-09-20",
+      "starRating": 4.4,
+      "InStock": 5
+    },
+    {
+      "id": "5",
+      "productName": "Lựu Peru",
+      "description": "Lựu Peru nổi tiếng được trồng rất nhiều tại đây và xuất khẩu đi các thị trường lớn trên Thế Giới",
+      "price": 350000,
+      "imageUrl": "../assets/images/luu.png",
+      "Date": "2022-09-20",
+      "starRating": 4.4,
+      "InStock": 5
+    },
+    {
+      "id": "6",
+      "productName": "CHUỐI LABA",
+      "description": "Chuối Laba (chuối Tiến Vua), một giống chuối đặc sản nổi tiếng của vùng đất Lâm Đồng đang có nguy cơ mai một, giống chuối quý này đã từng rất nổi tiếng,được ưa chuộng nhờ hương vị thơm ngon, dẻo ngọt. Trong lịch sử, chuối Laba đã được dùng để tiến Vua Bảo Đại, triều đình và các quan chức người Pháp. Vì vậy, chuối Laba còn được gọi là chuối Tiến Vua.",
+      "price": 25000,
+      "imageUrl": "../assets/images/chuoi.png",
+      "Date": "2022-09-20",
+      "starRating": 4.4,
+      "InStock": 5
+    },
+    {
+      "id": "7",
+      "productName": "Xoài",
+      "description": "Xoài là nguồn cung cấp vitamin A, chất chống oxi hóa tự nhiên, có tác dụng tăng cường thị lực, quáng gà, khô mắt, mềm hóa giác mạc, tật khúc xạ, ngứa, rát mắt đều có thể được ngăn chặn bằng cách ăn xoài thường xuyên",
+      "price": 50000,
+      "imageUrl": "../assets/images/xoai.png",
+      "Date": "2022-09-20",
+      "starRating": 4.4,
+      "InStock": 5
+    },
+    {
+      "id": "8",
+      "productName": "SẦU RIÊNG RI6",
+      "description": "Sầu riêng RI6 có hương vị thơm ngon, và có chứa một hàm lượng vitamin C, B, chất xơ, sắt, đồng, kali… tốt cho sức đề kháng, cải thiện lưu lượng máu và giúp bạn vượt qua trầm cảm hiệu quả.",
+      "price": 25000,
+      "imageUrl": "../assets/images/saurieng.png",
+      "Date": "2022-09-20",
+      "starRating": 4.4,
+      "InStock": 5
+    },
+    {
+      "id": "9",
+      "productName": "Trái vải",
+      "description": "Quả vải thiều là một trong những loại trái cây được ưa chuộng tiêu thụ nhiều vào dịp hè. Loại quả nhiệt đới này không chỉ giàu giá trị dinh dưỡng mà còn đem lại rất nhiều lợi ích ấn tượng đối với sức khoẻ, chẳng hạn như chữa lành các tổn thương, ngăn ngừa ung thư, tốt cho da và hệ tiêu hoá.",
+      "price": 70000,
+      "imageUrl": "../assets/images/vai.png",
+      "Date": "2022-09-20",
+      "starRating": 4.4,
+      "InStock": 5
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "ho": "Le",
+      "ten": "duy",
+      "sdt": "123456789",
+      "email": "itc.edu@gmail.com",
+      "password": "123456789"
+    },
+    {
+      "id": "2",
+      "ho": "minh",
+      "ten": "nam",
+      "sdt": "1234",
+      "email": "abc@gmail.com",
+      "password": "12345"
+    }
+  ]
 }

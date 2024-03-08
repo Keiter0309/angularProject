@@ -7,6 +7,8 @@ import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { LoginComponent } from './auth/login/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ResComponent } from './auth/res/res.component';
 
 
 const routes: Routes = [
@@ -17,11 +19,13 @@ const routes: Routes = [
   {path:"checkout",component:CheckoutComponent,title:"Thanh Toán"},
   {path:"product-details/:id",component:ProductDetailComponent,title:"Chi tiết sản phẩm"},
   {path:"login",component:LoginComponent,title:"Đăng Nhập"},
+  {path:"dangki",component:ResComponent,title:"Đăng Kí"},
  
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
+  
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

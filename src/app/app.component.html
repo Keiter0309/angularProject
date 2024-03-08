@@ -50,7 +50,7 @@
                 
                 <ng-container *ngIf="isAuthenticated()">
                     <li class="nav-item active">
-                        <a class="nav-link" routerLink="/logout" href="#">Logout</a>
+                        <a class="nav-link" (click)="logout()"  href="#">Logout</a>
                     </li>
                 </ng-container>
                   <a class="shopping-cart" routerLink="/cart"><i class="fas fa-shopping-cart"></i> {{ItemCount()}} </a>

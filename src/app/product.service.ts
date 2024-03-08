@@ -36,4 +36,7 @@ export class ProductService {
   EditProduct(id:number){
     return this.products[id]
   }
+  getProductByName(name: string): Observable<Product[]> {
+    return this.http.get<Product[]>(`${this.URL}?productName=${name}`);
+  }
 }

@@ -1,22 +1,66 @@
 import { Component } from '@angular/core';
-import { LoginForm } from '../auth';
 import { AuthService } from '../auth.service';
-
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  form: LoginForm = {
-      email: '',
-      password: ''
-  };
+  login:any []=[];
+  
+  loginForm = new FormGroup({
+    email: new FormControl('', [Validators.required, Validators.email]),
+    password: new FormControl('', [Validators.required]),
+  });
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService) { 
+    this.authService.getAllUserList().subscribe(data=>{
+      this.login =data
+    })
+  }
 
+  // submit() {
+  //   const email = this.loginForm.value.email;
+  //   const password = this.loginForm.value.password;
+  //   console.log(email);
+  //   console.log(password);
+  // }
   submit() {
-      this.authService.login(this.form);
-      console.log(this.form);
+    const email = this.loginForm.value.email;
+    const password = this.loginForm.value.password;
+
+    if (email && password) {
+      this.authService.login(email, password).subscribe(isValid => {
+        if (isValid) {
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Đăng Nhập Thành Công",
+            showConfirmButton: false,
+            timer: 1500
+          });
+        } else {
+          Swal.fire({
+            position: "top-end",
+            icon: "error",
+            title: "Sai Email Hoặc Mật Khẩu",
+            showConfirmButton: false,
+            timer: 1500
+          });
+        }
+      });
+    } else {
+      console.log("Vui lòng nhập email và mật khẩu!");
+      Swal.fire({
+        position: "top-end",
+        icon: "error",
+        title: "Vui lòng nhập email và mật khẩu!",
+        showConfirmButton: false,
+        timer: 1500
+      });
+    }
   }
 }
+  

@@ -1,0 +1,71 @@
+<!-- breadcrumb-section -->
+<div class="breadcrumb-section breadcrumb-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <div class="breadcrumb-text">
+                    <p>Fresh and Organic</p>
+                    <h1>Đăng Kí</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end breadcrumb section -->
+
+<!-- check out section -->
+<div class="checkout-section mt-150 mb-150 ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="checkout-accordion-wrap">
+                    <div class="accordion " id="accordionExample">
+                      
+                            <div class="card single-accordion">
+                                <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Đăng Kí 
+                                    </button>
+                                </h5>
+                                </div>
+        
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="billing-address-form">
+                                        <!-- <form action="index.html"> -->
+                                            <p>
+                                                <input type="text" [(ngModel)]="ho"    placeholder="Nhập Họ" class="form-control">
+                                            </p>
+                                            <p><input type="text" [(ngModel)]="ten"    placeholder="Nhập Tên" class="form-control"></p>
+                                            
+                                            <p><input type="number"  [(ngModel)]="sodienthoai"   placeholder="Nhập Số diện thoại" class="form-control w-100"></p>
+                                            <!-- <p><input type="text"    placeholder="Nhập Email" class="form-control"></p> -->
+                                            
+                                            <p><input type="email"    placeholder="Nhập Email" class="form-control"></p>
+                                            <p><input type="password" placeholder="Nhập Mật Khẩu" class="form-control" [(ngModel)]="password"></p>
+                                            <p><input type="password" placeholder="Nhập Lại Mật Khẩu" class="form-control" [(ngModel)]="confirmPassword"></p>
+
+
+                                        
+                                            <button class="btn btn-primary" type="button" (click)="register()">Đăng Ký</button>
+                                            <a   routerLink="/login">Bạn Có Tài Khoản</a>
+        
+                                        <!-- </form> -->
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                      
+
+                      
+                    
+                    </div>
+
+                </div>
+            </div>
+
+          
+        </div>
+    </div>
+</div>

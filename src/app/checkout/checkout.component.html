@@ -85,40 +85,24 @@
                     <table class="order-details">
                         <thead>
                             <tr>
-                                <th>Your order Details</th>
-                                <th>Price</th>
+                                <th>Sản Phẩm Đặt Hàng Của Bạn</th>
+                                <th>Giá Tiền</th>
                             </tr>
                         </thead>
                         <tbody class="order-details-body">
                             <tr>
-                                <td>Product</td>
-                                <td>Total</td>
+                                <td>Tên Sản Phẩm</td>
+                                <td>Tổng Tiền</td>
                             </tr>
-                            <tr>
-                                <td>Strawberry</td>
-                                <td>$85.00</td>
-                            </tr>
-                            <tr>
-                                <td>Berry</td>
-                                <td>$70.00</td>
-                            </tr>
-                            <tr>
-                                <td>Lemon</td>
-                                <td>$35.00</td>
+                            <tr *ngFor=" let item of cartList ">
+                                <td>{{item.Name}}</td>
+                                <td> {{item.TotalPrice}}</td>
                             </tr>
                         </tbody>
                         <tbody class="checkout-details">
                             <tr>
-                                <td>Subtotal</td>
-                                <td>$190</td>
-                            </tr>
-                            <tr>
-                                <td>Shipping</td>
-                                <td>$50</td>
-                            </tr>
-                            <tr>
                                 <td>Total</td>
-                                <td>$240</td>
+                                <td>{{TotalPrice()}}</td>
                             </tr>
                         </tbody>
                     </table>

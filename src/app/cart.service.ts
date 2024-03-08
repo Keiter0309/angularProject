@@ -1,13 +1,20 @@
 import { Injectable } from '@angular/core';
 import { Cart } from './cart';
 import { ProductService } from './product.service';
+import { Router } from '@angular/router';
+import { AuthService } from './auth/auth.service';
+import Swal from 'sweetalert2';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
   protected cartList:Cart[] =[]
-  constructor(private prod:ProductService) { }
+  constructor(
+    private prod:ProductService,
+    private router:Router,
+    private authService: AuthService
+    ) { }
   
   getCartAll(){
     return this.cartList
@@ -78,5 +85,28 @@ export class CartService {
     if (item.Quantity !== undefined && item.Price !== undefined) {
       item.TotalPrice = item.Price * item.Quantity;
     }
+  }
+  isAuthenticated() {
+    return this.authService.isAuthenticated
+  }
+  CheckLogin(){
+      if (this.isAuthenticated()==true) {
+        this.router.navigate(["/checkout"]);
+      }else{
+        Swal.fire({
+          title: "Bạn Chưa Đăng Nhập?",
+          text: "Vui Lòng Đăng Nhập",
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+          if (result.isConfirmed) {
+            this.router.navigate(["/login"]);
+          }
+        });
+        
+      }
   }
 }

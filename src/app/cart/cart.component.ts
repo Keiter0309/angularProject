@@ -5,6 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../product.service';
 import { CartService } from '../cart.service';
 import Swal from 'sweetalert2';
+import { AuthService } from '../auth/auth.service';
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
@@ -13,7 +14,11 @@ import Swal from 'sweetalert2';
 export class CartComponent implements OnInit {
   cartList: Cart[] = [];
 
-  constructor(private cartService: CartService) { }
+  constructor(
+    private cartService: CartService,
+    private authService: AuthService,
+    
+    ) { }
 
   ngOnInit(): void {
     this.cartList = this.cartService.getCartAll();
@@ -45,5 +50,7 @@ export class CartComponent implements OnInit {
       });
     }
   }
-
+  CheckLoginn(){
+    return this.cartService.CheckLogin()
+  }
 }
