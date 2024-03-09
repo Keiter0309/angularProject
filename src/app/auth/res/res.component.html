@@ -33,26 +33,16 @@
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                                 <div class="card-body">
                                     <div class="billing-address-form">
-                                        <!-- <form action="index.html"> -->
-                                            <p>
-                                                <input type="text" [(ngModel)]="ho"    placeholder="Nhập Họ" class="form-control">
-                                            </p>
-                                            <p><input type="text" [(ngModel)]="ten"    placeholder="Nhập Tên" class="form-control"></p>
-                                            
-                                            <p><input type="number"  [(ngModel)]="sodienthoai"   placeholder="Nhập Số diện thoại" class="form-control w-100"></p>
-                                            <!-- <p><input type="text"    placeholder="Nhập Email" class="form-control"></p> -->
-                                            
-                                            <p><input type="email"    placeholder="Nhập Email" class="form-control"></p>
-                                            <p><input type="password" placeholder="Nhập Mật Khẩu" class="form-control" [(ngModel)]="password"></p>
-                                            <p><input type="password" placeholder="Nhập Lại Mật Khẩu" class="form-control" [(ngModel)]="confirmPassword"></p>
-
-
-                                        
-                                            <button class="btn btn-primary" type="button" (click)="register()">Đăng Ký</button>
-                                            <a   routerLink="/login">Bạn Có Tài Khoản</a>
-        
-                                        <!-- </form> -->
-                                    </div>
+                                        <p><input type="text" [(ngModel)]="ho" placeholder="Nhập Họ" class="form-control"></p>
+                                        <p><input type="text" [(ngModel)]="ten" placeholder="Nhập Tên" class="form-control"></p>
+                                        <p><input type="text" [(ngModel)]="sdt" placeholder="Nhập Số điện thoại" class="form-control w-100"></p>
+                                        <p><input type="email" [(ngModel)]="email" placeholder="Nhập Email" class="form-control"></p>
+                                        <p><input type="password" [(ngModel)]="password" placeholder="Nhập Mật Khẩu" class="form-control"></p>
+                                        <p><input type="password" [(ngModel)]="confirmPassword" placeholder="Nhập Lại Mật Khẩu" class="form-control"></p>
+                                      
+                                        <button class="btn btn-primary" type="button" (click)="register()">Đăng Ký</button>
+                                        <a routerLink="/login">Bạn Có Tài Khoản</a>
+                                      </div>
                                 </div>
                                 </div>
                             </div>

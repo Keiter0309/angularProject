@@ -47,5 +47,40 @@ logout(){
   this.router.navigate([""]);
   this.isAuthenticated=false;
 }
+register(email :string ,password :string ,ho:string,ten:string,sdt:string){
+  return this.getAllUserList().pipe(
+    map(users =>{
+      const user = users.find(i=>i.email===email);
+      if (!user) {
+        this.Auto
+        const newUser: LoginForm = {
+          email: email,
+          password: password,
+          ho: ho,
+          ten: ten,
+          sdt: sdt,
+          id: this.Auto()
+        };
+        this.Users.push(
+          newUser
+        )
+          // Cập nhật thông tin mới vào db.json thông qua API
+          this.updateUserList().subscribe();
+      
+        return true;
+        
+      }else{
+        return false;
 
+      }
+    })
+  )
+}
+private updateUserList(): Observable<any> {
+  // Sử dụng phương thức PUT hoặc POST tùy thuộc vào yêu cầu của server
+  // Ví dụ sử dụng phương thức PUT:
+  // return this.http.put(this.URL, {users: this.Users });
+  // Hoặc sử dụng phương thức POST:
+  return this.http.post(this.URL, { users: this.Users });
+}
 }

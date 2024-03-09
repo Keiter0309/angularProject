@@ -2,7 +2,7 @@ export interface LoginForm {
     id:number,
     ho :string,
     ten :string,
-    sdt :number,
+    sdt :string,
     email :string,
     password:string 
 }
