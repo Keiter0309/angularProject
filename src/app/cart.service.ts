@@ -9,6 +9,9 @@ import Swal from 'sweetalert2';
   providedIn: 'root'
 })
 export class CartService {
+  addProduct(product: any) {
+    throw new Error('Method not implemented.');
+  }
   protected cartList:Cart[] =[]
   constructor(
     private prod:ProductService,

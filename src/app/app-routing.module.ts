@@ -9,6 +9,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { LoginComponent } from './auth/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ResComponent } from './auth/res/res.component';
+import { ShopComponent } from './shop/shop.component';
+import { ShopSingleComponent } from './shop-single/shop-single.component';
 
 
 const routes: Routes = [
@@ -20,7 +22,8 @@ const routes: Routes = [
   {path:"product-details/:id",component:ProductDetailComponent,title:"Chi tiết sản phẩm"},
   {path:"login",component:LoginComponent,title:"Đăng Nhập"},
   {path:"dangki",component:ResComponent,title:"Đăng Kí"},
- 
+  {path: "shop", component: ShopComponent, title: "Shop"},
+  {path:"shop-single/:id",component:ShopSingleComponent,title:"Shop Single"},
 ];
 
 @NgModule({

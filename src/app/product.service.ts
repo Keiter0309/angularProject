@@ -30,8 +30,8 @@ export class ProductService {
     var id = this.products.push(frmProduct)-1;
     this.products[id].imageUrl=fileImg;
   }
-  getProduct(){
-    return this.products
+  getProduct(id: number): Observable<Product> {
+    return this.http.get<Product>(`http://localhost:3000/products/${id}`);
   }
   EditProduct(id:number){
     return this.products[id]
